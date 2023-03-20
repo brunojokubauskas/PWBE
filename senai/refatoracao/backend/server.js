@@ -19,3 +19,13 @@ app.use("/atendimentos", AtendimentosRouter); // É necessário adicionar um cam
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+app.use(express.json);
+
+app.use(EspecialidadesRouter);
+app.use(MedicosRouter);
+app.use(PacientesRouter);
+app.use(AtendimentosRouter);
+
+app.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
