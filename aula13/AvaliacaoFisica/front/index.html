@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sistema de Gerenciamento de Pacientes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
   </head>
@@ -10,7 +11,10 @@
     <header>
       <h1>Sistema de Gerenciamento de Pacientes</h1>
       <nav>
-        <ul>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul id="menu">
           <li><a href="#cadastrar-paciente">Cadastrar Paciente</a></li>
           <li><a href="#listar-todos">Listar Todos</a></li>
           <li><a href="#alterar-dados">Alterar Dados do Paciente</a></li>
