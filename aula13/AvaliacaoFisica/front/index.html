@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sistema de Gerenciamento de Pacientes</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Gerenciamento de Pacientes</h1>
+      <nav>
+        <ul>
+          <li><a href="#cadastrar-paciente">Cadastrar Paciente</a></li>
+          <li><a href="#listar-todos">Listar Todos</a></li>
+          <li><a href="#alterar-dados">Alterar Dados do Paciente</a></li>
+          <li><a href="#excluir-paciente">Excluir Paciente</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="cadastrar-paciente">
+        <h2>Cadastrar Paciente</h2>
+        <form>
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" required />
+
+          <label for="imc">Formulário do IMC:</label>
+          <textarea id="imc" name="imc" required></textarea>
+
+          <label for="diagnostico">Diagnóstico:</label>
+          <input type="text" id="diagnostico" name="diagnostico" required />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+
+      <section id="listar-todos">
+        <h2>Listar Todos</h2>
+        <ul>
+          <!-- Aqui serão listados todos os pacientes cadastrados -->
+        </ul>
+      </section>
+
+      <section id="alterar-dados">
+        <h2>Alterar Dados do Paciente</h2>
+        <form>
+          <!-- Aqui serão exibidos os dados do paciente selecionado para alteração -->
+          <label for="idade">Idade:</label>
+          <input type="number" id="idade" name="idade" required />
+
+          <label for="imc">Formulário do IMC:</label>
+          <textarea id="imc" name="imc" required></textarea>
+
+          <label for="diagnostico">Diagnóstico:</label>
+          <input type="text" id="diagnostico" name="diagnostico" required />
+
+          <button type="submit">Salvar Alterações</button>
+        </form>
+      </section>
+
+      <section id="excluir-paciente">
+        <h2>Excluir Paciente</h2>
+        <ul>
+          <!-- Aqui serão listados todos os pacientes cadastrados, com a opção de excluir cada um -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Sistema de Gerenciamento de Pacientes</p>
+    </footer>
+  </body>
+</html>
